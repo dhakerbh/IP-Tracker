@@ -23,28 +23,35 @@
           name="text"
           id="txt1"
         />
-        <input type="button" id="btn1" value="" name="text" />
+        <input
+          type="button"
+          id="btn1"
+          value=""
+          name="text"
+          onclick="GetIP();"
+        />
       </form>
       <div class="info-field">
         <div class="ip-field">
           <p>IP Address</p>
-          <h1 id="ip-adress">192.168.158.152</h1>
+          <h1 id="ip-adress"></h1>
         </div>
         <div class="loc-field">
           <p>Location</p>
-          <h1 id="loc">Monastir, TN 4260</h1>
+          <h1 id="loc"></h1>
         </div>
         <div class="time-field">
           <p>time zone</p>
-          <h1 id="time">GMT +1:00</h1>
+          <h1 id="time"></h1>
         </div>
         <div class="isp-field">
           <p>isp</p>
-          <h1 id="isp">TESLA NO PASARAN</h1>
+          <h1 id="isp"></h1>
         </div>
       </div>
     </div>
     <iframe
+      id="map"
       class="map"
       width="600"
       height="450"
@@ -52,7 +59,7 @@
       loading="lazy"
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA--xjTv9gFM5AqwOu4FvZfEsPwz58977Q&q=Space+Needle,Seattle+WA"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA--xjTv9gFM5AqwOu4FvZfEsPwz58977Q&q=45.55,45.55"
     >
     </iframe>
     <script src="./script.js"></script>
