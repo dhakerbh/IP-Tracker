@@ -11,7 +11,7 @@ body {
 }
 
 .top-cont {
-  background: url("/images/pattern-bg.png") center;
+  background: url("IP-Tracker/images/pattern-bg.png") center;
   background-size: cover;
   height: 30vh;
   padding-top: 20px;
