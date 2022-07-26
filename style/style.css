@@ -11,7 +11,7 @@ body {
 }
 
 .top-cont {
-  background: url("/images/pattern-bg.png") center;
+  background: url("../images/pattern-bg.png") center;
   background-size: cover;
   height: 30vh;
   padding-top: 20px;
@@ -81,7 +81,7 @@ body {
   height: 50px;
   border: 0;
   outline: 0;
-  background: url("/images/icon-arrow.svg") center no-repeat, black;
+  background: url("../images/icon-arrow.svg") center no-repeat, black;
   border-radius: 0 12px 12px 0;
 }
 
