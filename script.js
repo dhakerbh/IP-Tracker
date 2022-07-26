@@ -1,17 +1,17 @@
 const request = new XMLHttpRequest();
-request.open("GET", "http://ip-api.com/json/");
+request.open("GET", "https://freeipapi.com/api/json");
 request.send();
 request.responseType = "json";
 request.onload = () => {
   res = request.response;
-  var ip = res["query"];
-  var city = res["city"];
+  var ip = res["ipAddress"];
+  var city = res["cityName"];
   var code = res["countryCode"];
-  var zip = res["zip"];
-  var time = res["timezone"];
+  var zip = res["zipCode"];
+  var time = res["timeZone"];
   var isp = res["org"];
-  var lon = res["lon"];
-  var lat = res["lat"];
+  var lon = res["longitude"];
+  var lat = res["latitude"];
 
   var loc = `${city}, ${code} ${zip}`;
   document.getElementById("ip-adress").innerHTML = ip;
@@ -40,7 +40,7 @@ function GetIP() {
     var code = res["countryCode"];
     var zip = res["zip"];
     var time = res["timezone"];
-    var isp = res["org"];
+    //var isp = res["org"];
     var lon = res["lon"];
     var lat = res["lat"];
 
@@ -48,7 +48,7 @@ function GetIP() {
     document.getElementById("ip-adress").innerHTML = ip;
     document.getElementById("loc").innerHTML = loc;
     document.getElementById("time").innerHTML = time;
-    document.getElementById("isp").innerHTML = isp;
+   // document.getElementById("isp").innerHTML = isp;
     document
       .getElementById("map")
       .setAttribute(
